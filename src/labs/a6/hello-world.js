@@ -1,4 +1,5 @@
-import Nav from "../../nav";
+import {useSelector} from "react-redux";
+import {useState} from "react";
 const HelloWorld = () => {
   const m = useSelector(k => k.h)
   const [n, o] = useState('p');
