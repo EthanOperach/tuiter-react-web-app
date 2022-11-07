@@ -7,9 +7,11 @@ import whoReducer
 import {configureStore}
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+import tuitsReducer from "./reducers/tuits-reducer";
+
 
 const store = configureStore(
-    {reducer: {who: whoReducer}});
+    {reducer: {who: whoReducer, tuits: tuitsReducer}});
 
 function Tuiter() {
   return (
