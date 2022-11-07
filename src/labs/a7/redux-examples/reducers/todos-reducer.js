@@ -29,8 +29,8 @@ const todosSlice = createSlice({
       state.splice(index, 1)
     },
     todoDoneToggle(state, action) {
-      const todo = state.find((todo) =>
-          todo._id === action.payload._id)
+      const index = action.payload
+      const todo = state[index]
       todo.done = !todo.done
     }
 
