@@ -14,3 +14,10 @@ export const deleteTuitThunk = createAsyncThunk(
         await service.deleteTuit(tuitId)
         return tuitId
     })
+
+    export const updateTuitThunk =
+  createAsyncThunk(
+    'tuits/updateTuit',
+    async (tuit) =>
+      await service.updateTuit(tuit)
+)

@@ -21,7 +21,7 @@ const TuitsList = () => {
                 </li>
             }
             <li className="list-group-item">
-                <TuitItem/>
+                
             </li>
         </ul>
     );
